@@ -1,0 +1,66 @@
+/* Global layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, -apple-system, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, #fff, #f6f8fb);
+  color: #1f2937;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 28px auto;
+  padding: 20px;
+}
+
+.header {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  color: #111827;
+  letter-spacing: 0.2px;
+}
+
+.subheader {
+  margin: 0 0 18px 0;
+  color: #374151;
+  opacity: 0.9;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+}
+
+.radio-label {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.radio-items .dash-radio-item {
+  margin-right: 12px;
+}
+
+.chart-card {
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.06);
+}
+
+/* Improve graph responsiveness */
+.dash-graph {
+  width: 100% !important;
+}
+
+/* Tidy small screens */
+@media (max-width: 600px) {
+  .controls { flex-direction: column; align-items: flex-start; }
+}
+
+/* A few extra touches for axis labels in the rendered svg */
+.js-plotly-plot .gtitle { font-size: 16px; font-weight: 600; }
